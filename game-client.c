@@ -1,3 +1,6 @@
+// The Game Client handles user input and displayes messages from the server. 
+// The client also connects to the Game Server, receives game messages, and sends player moves.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
