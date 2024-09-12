@@ -1,3 +1,6 @@
+// The Game Server listens for incoming player connections, manages game state and also coordinates player turns. 
+// It uses multi-threading to handle multiple players at the same time.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
