@@ -30,11 +30,11 @@ gcc -o game-server game-server.c -lws2_32 -lpthread
 ### Usage
 Run the server with this command:
 
-./game-server <Port Number> <Game Name> <Number of Players>
+./game-server <Port-Number> <Game-Name> <Number-of-Players>
 
-- <Port Number>: Port which the server will listen on.
-- <Game Name>: Name or type of game being setup.
-- <Number of Players>: Number of players wanted for the game.
+- <Port-Number>: Port which the server will listen on.
+- <Game-Name>: Name or type of game being setup.
+- <Number-of-Players>: Number of players wanted for the game.
 
 Example: ./game-server 8080 numbers 2
 
@@ -55,11 +55,11 @@ gcc -o game-client game-client.c -lws2_32
 ### Usage
 To run the client, use this command:
 
-./game-client <Game Name> <Server IP> <Port Number>
+./game-client <Game-Name> <Server-IP> <Port-Number>
 
-- <Game Name>: Name or type of game.
-- <Server IP>: IP address of server.
-- <Port Number>: Port which the server is listening on.
+- <Game-Name>: Name or type of game.
+- <Server-IP>: IP address of server.
+- <Port-Number>: Port which the server is listening on.
 
 Example: ./game-client numbers 127.0.0.1 8080
 
