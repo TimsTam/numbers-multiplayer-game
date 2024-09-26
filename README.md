@@ -25,18 +25,18 @@ The Game Server listens for incoming player connections, manages game state and 
 
 To compile the server, use this command:
 
-gcc -o game_server game_server.c -lws2_32 -lpthread
+gcc -o game-server game-server.c -lws2_32 -lpthread
 
 ### Usage
 Run the server with this command:
 
-./game_server <Port Number> <Game Name> <Number of Players>
+./game-server <Port Number> <Game Name> <Number of Players>
 
 - <Port Number>: Port which the server will listen on.
 - <Game Name>: Name or type of game being setup.
 - <Number of Players>: Number of players wanted for the game.
 
-Example: ./game_server 8080 numbers 2
+Example: ./game-server 8080 numbers 2
 
 ## Game Client
 ### Description
@@ -50,18 +50,18 @@ The Game Client handles user input and displayes messages from the server. The c
 ### Compilation
 To compile the client, use this command:
 
-gcc -o game_client game_client.c -lws2_32
+gcc -o game-client game-client.c -lws2_32
 
 ### Usage
 To run the client, use this command:
 
-./game_client <Game Name> <Server IP> <Port Number>
+./game-client <Game Name> <Server IP> <Port Number>
 
 - <Game Name>: Name or type of game.
 - <Server IP>: IP address of server.
 - <Port Number>: Port which the server is listening on.
 
-Example: ./game_client numbers 127.0.0.1 8080
+Example: ./game-client numbers 127.0.0.1 8080
 
 ### Dependencies
 - Winsock2 is Required for network communication on Windows. 
